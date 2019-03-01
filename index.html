@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i" rel="stylesheet">
+    <title>James &amp; Mathilda</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    
+        <script>
+            $(document).ready(function() {
+
+                var respmenu 		= $('#respmenu');
+                var	menu 			= $('#nav>ul');
+
+                $(respmenu).on('click', function(e) {
+                    e.preventDefault();
+                    menu.slideToggle();
+                });
+
+                $(window).resize(function(){
+                    var sirina = $(window).width();
+                    if(sirina > 768 && menu.is(':hidden')) {
+                        menu.removeAttr('style');
+                    }	
+                });
+            });	
+        </script>
+     
+</head>
+
+<body>
+    
+    <div id="hero">
+    <header>
+        <div class="wrapper">
+        <img id="imglogo" src="assets/logo.png">
+        <select id="denhag">
+            <option>Den Haag</option>
+            <option>Amsterdam</option> 
+            <option>Roterdam</option>
+        </select>
+                <nav id="nav">
+                	<ul>
+                    	<li><a href="#top">HOME</a></li>
+                    	<li><a href="#services">SERVICES</a></li>
+                    	<li><a href="#aboutus">ABOUT</a></li>
+                    	<li><a href="#contact">CONTACT</a></li>
+                        <li class="hide"><a class="white">|</a></li>
+                        <li><a href="#"><span class="white firstletter">Ordered services </span><span class="green">(0)</span>
+                        <br><span class="grey firstletter">View&amp;Checkout&nbsp;</span><img src="assets/arrow.png"></a></li>
+                    </ul>
+                    <a href="#" id="respmenu" class="button"><i class="fas fa-bars"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Menu</a>
+                </nav>
+        </div><!-- end of .wrapper -->
+    </header>
+        <div class="wrapper centar">
+            <p class="font36 mt150">Pleased to meet you!</p>
+            <div id="host" class="centar">
+                <img src="assets/james.png" id="james" onmouseover="selectJames(this);" />
+                <p class="m15" id="hostp">My name is <i id="name">James</i>, your trusted partner at the service you need, at home or were it is needed. Have a look at the different services we can offer you. Choose the <span class="yitalic">service you need</span> and <span class="yitalic">plan it into my agenda.</span> Hope to see you soon!</p>
+                <img src="assets/mathilda.png" id="mathilda" onmouseover="selectMathilda(this);" />
+                <p class="mt110">With best regards,</p>
+                <img src="assets/james-signature.png" id="signature" />
+                
+            </div><!-- end of #host -->
+            <p><a href="#services" class="button">view all services &nbsp; <i class="arrow down"></i></a></p>
+            <div class="break"></div>
+        </div><!-- end of .wrapper -->
+    </div><!-- end of #hero -->
+
+    <script>
+         function selectJames(element){
+             element.setAttribute('src','assets/james-selected.png');
+             var mathilda = document.getElementById('mathilda');
+             mathilda.src="assets/mathilda.png";
+             var signature = document.getElementById('signature');
+             signature.src = "assets/james-signature.png";
+             var name = document.getElementById('name');
+             name.innerHTML = "James";
+        }
+        
+          function selectMathilda(element){
+             element.setAttribute('src','assets/mathilda-selected.png');
+             var james = document.getElementById('james');
+             james.src="assets/james.png";
+             var signature = document.getElementById('signature');
+             signature.src = "assets/mathilda-signature.png";
+             var name = document.getElementById('name');
+             name.innerHTML = "Mathilda";
+        }
+        
+        var images = ['home-1','home-2','home-3','home-4'];
+        var url=0;
+        var hero = document.getElementById('hero');
+        function changeBackground(){
+           url+=1;
+          if(url==4){
+            url=0;
+          }
+          hero.style.background = 'url(assets/'+images[url]+'.jpg)';
+        };
+        setInterval(changeBackground,3000);
+    </script>
+    
+    <div id="zone3">
+        <div class="wrapper">
+            <div class="ad">
+                <img src="assets/like.png" />
+                <p>Various services in the Huge area.<br>
+                We work for 100% satisfied customers!</p>
+            </div><!-- end of #ad -->
+            <div class="ad">
+                <img src="assets/date.png" />
+                <p>Choose the service need;from shopping assistant to piano teacher!Plan the service directly in our agenda.</p>
+            </div><!-- end of #ad -->
+            <div class="ad">
+                <img src="assets/smile.png" />
+                <p>Our personal and professional approach is the<br> key to happiness of our clients.</p>
+            </div><!-- end of #ad -->
+        </div><!-- end of .wrapper -->
+    </div><!-- end of #zone3 -->
+    
+    <div id="services">
+        <div class="wrapper">
+            <h2 class="centar">OUR SERVICES</h2>
+            <p class="centar mb30">After youre reservation, we will contact you for the further details and confirmation.</p>
+            
+            <div class="service centar">
+                <img src="assets/piano.png" />
+                <h5>Piano lessons</h5>
+                <p>Jazz and classic for beginners and A-level</p>
+            </div><!-- end of #service -->
+            <div class="service centar">
+                <img src="assets/museum.png" />
+                <h5>Museums</h5>
+                <p>Your partner for museum visits</p>
+            </div><!-- end of #service -->
+            <div class="service centar">
+                <img src="assets/restaurant.png" />
+                <h5>Restaurants</h5>
+                <p>Your partner for restaurant visits</p>
+            </div><!-- end of #service -->
+            <div class="service centar">
+                <img src="assets/map.png" />
+                <h5>City guide</h5>
+                <p>Your city guide for tours in The Hague, Delft and Amsterdam (<span class="italic green">3hours</span> to various places of interest)</p>
+            </div><!-- end of #service -->
+            
+            <div class="service centar">
+                <img src="assets/yoga.png" />
+                <h5>Yoga lessons</h5>
+                <p>Private yoga lessons at home or at other location in The Hague</p>
+            </div><!-- end of #service -->
+            <div class="service centar">
+                <img src="assets/hand.png" />
+                <h5>Shiatsu treatment</h5>
+                <p>At home or at other location in The Hague</p>
+            </div><!-- end of #service -->
+            <div class="service centar">
+                <img src="assets/wrench.png" />
+                <h5>Handy man</h5>
+                <p>For small repairs around the house</p>
+            </div><!-- end of #service -->
+            <div class="service centar">
+                <img src="assets/gardening.png" />
+                <h5>Gardening</h5>
+                <p>All you need in the garden</p>
+            </div><!-- end of #service -->
+            
+            <div class="service centar">
+                <img src="assets/ironing.png" />
+                <h5>Ironing aid</h5>
+                <p>Various services in the Hague area. We work for 100% satisfied customers!</p>
+            </div><!-- end of #service -->
+            <div class="service centar">
+                <img src="assets/house.png" />
+                <h5>Housekeeping</h5>
+                <p>Help with housekeeping activities</p>
+            </div><!-- end of #service -->
+            <div class="service centar">
+                <img src="assets/shop.png" />
+                <h5>Shopping</h5>
+                <p>Your personal shopping assistant</p>
+            </div><!-- end of #service -->
+            <div class="service centar">
+                <img src="assets/folder.png" />
+                <h5>Administrative</h5>
+                <p>Help with administrative work</p>
+            </div><!-- end of #service -->
+            
+            <div class="service centar">
+                <img src="assets/guitar.png" />
+                <h5>Concerts</h5>
+                <p>Partner to visit a concert</p>
+            </div><!-- end of #service -->
+            <div class="service centar">
+                <img src="assets/cooking.png" />
+                <h5>Cooking aid</h5>
+                <p>1st or 2nd 'master chef</p>
+            </div><!-- end of #service -->
+            <div class="service centar">
+                <img src="assets/chair.png" />
+                <h5>Dragon story</h5>
+                <p>Children's party with Dragon story</p>
+            </div><!-- end of #service -->
+            <div class="service centar">
+                <img src="assets/crown.png" />
+                <h5>Treasure hunt</h5>
+                <p>Children's party with Treasure hunt</p>
+            </div><!-- end of #service -->
+
+        </div><!-- end of .wrapper -->
+    </div><!-- end of #services -->
+    
+    <div id="contact">
+        <div class="wrapper">
+            <h2 class="centar">CONTACT US</h2>
+            <p class="centar mb50">Our personal and professional approach is the key to happiness of our clients.</p>
+            
+            <div id="callus">
+                <img src="assets/phone.png" />
+                <h5>Call us:</h5>
+                <p>We are happy to help!</p>
+                <p>Call us <a href="tel:+31-06-244-99-358" class="lightblack">+31 (0)6 244 99 358</a> or contact us via email form.</p>
+            
+            </div><!-- end of #callus -->
+            
+            <div id="emailus">
+                <img src="assets/email.png" />
+                <h5>Email us:</h5>
+                <form>
+                <input type="text" placeholder="Your name" class="input"/>
+                <input type="text" placeholder="Your e-mail" class="input" />
+                <input type="text" placeholder="Your message here..." id="inputmessage"/>
+                    <p><a href="#contact" class="button">send message &nbsp; <img src="assets/email-arrow.png"/></a></p>
+                </form>
+            </div><!-- end of #emailus -->
+            
+        </div><!-- end of .wrapper -->
+    </div><!-- end of #contact -->
+    
+    <div id="aboutus">
+        <div class="wrapper">
+            <div id="aboutuspic">
+                <img src="assets/james-and-mathilda.png" />
+            </div>
+            
+            <p id="bigP">About us</p>
+            <div id="aboutusParagraf">
+                <p>The James and Mathilda services are various but all characterized by the positive commitment to the full satisfaction of its clients. With this reputation, the concept of James and Mathilda wins popularity rapidly. Enjoy the benefits of our service. Do you hace a specific request that is not listed, please give them to us. We will be pleased to inform you about the possibilities.</p>
+                <p>Yours sincerely,</p>
+                <img src="assets/james-and-mathilda-signature.png" />
+                
+                <p id="aboutusButton"><a href="#aboutus" class="button">more about us &nbsp; <i class="arrow right"></i></a></p>
+            </div><!-- end of #aboutusParagraf -->
+        </div><!-- end of .wrapper -->
+    </div><!-- end of #aboutus -->
+    
+    <footer>
+        <div class="wrapper">
+            <p id="copyright">Copyright &copy; 2015 James&amp;Mathilda.&nbsp;&nbsp; | <a href="#">FAQ</a>| <a href="#"><span class="green">Terms&amp;Conditiones</span></a> | <a href="#">Privacy Policy</a> </p> <span id="follow"><p>Follow us:  &nbsp;&nbsp;  <a href="#"><img src="assets/facebook.png" onmouseover="hover(this);" onmouseout="unhover(this);" /></a><a href="#"><img src="assets/twitter.png" onmouseover="hovert(this);" onmouseout="unhovert(this);" /></a></p></span>
+        </div><!-- end of .wrapper -->  
+    </footer><!-- end of footer -->
+    
+</body> 
+    <script>
+        function hover(element){
+            element.setAttribute('src','assets/facebook-rollover.png');
+        }
+         function unhover(element){
+            element.setAttribute('src','assets/facebook.png');
+        }
+         function hovert(element){
+            element.setAttribute('src','assets/twitter-rollover.png');
+        }
+         function unhovert(element){
+            element.setAttribute('src','assets/twitter.png');
+        }
+        
+        
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+    <!-- created by Milos Zivkovic -->
+</html>
+

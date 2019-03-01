@@ -1,0 +1,568 @@
+@charset "UTF-8";
+body {
+	margin:0;
+	padding:0;
+	background: #f0eee1;
+	font-size:14px;
+    font-family: 'Open Sans', sans-serif;
+	color: #6f868c;
+}
+h1, h2, h3, h4, h5, h6 {
+	margin:1em 0 0.5em;
+	color:#FFF;
+}  
+h1 { font-size:3em;}
+h2 { font-size:2.2em;}
+h3 { font-size:2em;}
+h4 { font-size:1.6em;}
+h5 { font-size:1.4em;}
+h6 { font-size:1.2em;}
+
+p {
+	margin:0.3em 0 0.5em;
+    color:#FFF;
+}
+a{
+    text-decoration: none;
+    color:#FFF;
+}
+.wrapper {
+	width:960px;
+	margin:0 auto;
+}
+.wrapper:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.centar{
+    text-align: center;
+}
+#hero {
+	background:url(../assets/home-1.jpg) center center / cover fixed;
+	padding:0 0 50px 0;
+}
+header{
+    padding: 10px 0;
+}
+#imglogo{
+    float:left;
+    width: 200px;
+}
+.font36{
+    font-size: 36px;
+}
+.mt150{
+    margin-top:150px;
+}
+#nav {
+	float:right;
+}
+#nav ul {
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+#nav ul li {
+	float:left;
+}
+#nav ul li a {
+	display: block;
+	padding: 10px 10px;
+	font-size: 12px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+#nav ul li a:link,
+#nav ul li a:visited {
+	color: #f7e97c;
+	text-decoration: none;
+	transition: 0.2s all ease;
+}
+#nav ul li a:hover {
+	color: #FFF;
+}
+#respmenu {
+	display:none;
+	font-size:1.2em;
+	margin-top:40px;
+}
+.green{
+    color: #45a482;
+}
+.white{
+    color: #FFF;
+}
+.grey{
+    color: #6f868c;
+}
+.firstletter{
+    text-transform:capitalize;
+}
+.m15{
+    margin:15px;
+}
+.clear{
+    clear: both;
+}
+.mt110{
+    margin-top: 110px;
+}
+#host{
+    overflow: hidden;
+    position: relative;
+    clear: both;
+    height: 220px;
+    margin-top: 30px;
+}
+#james{
+    display: block;
+    position: absolute;
+    left:10px;
+}
+#mathilda{
+    display: block;
+    position: absolute;
+    right: 10px;
+}
+#hostp{
+    position: absolute;
+    padding:15px 150px;
+}
+.yitalic{
+    color:#f7e97c;
+    font-style: italic;
+}
+.italic{
+    font-style: italic;
+}
+.button {
+    border: 2px solid #f7e97c;
+    border-radius: 5px;
+    color: #f7e97c;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 15px 30px 15px;
+	margin: 20px 0;
+    text-transform: uppercase;
+    transition: all 0.2s ease;
+    text-decoration: none;
+}
+.arrow{
+    border: solid #f7e97c;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+.down{
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+.right{
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+.break{
+    height: 80px;
+    clear: both;
+}
+#denhag{
+    background: none;
+    color: #45a482;
+    margin:5px;   
+    padding: 3px;
+    margin-left: 20px;
+    border:none;
+}
+option{
+    background: transparent;
+}
+#zone3{
+    overflow: hidden;
+    background-color: #2f3a3e ;
+}
+.ad{
+    width: 310px;
+    float:left;
+    border-right: 1px solid #FFF;
+    margin: 30px 0;
+    text-align: center;
+    font-size:10px;
+}
+.ad img{
+    margin-bottom: 20px;
+}
+.ad:nth-of-type(3n){
+    border-right: none;
+}
+#services{
+    padding: 20px 0;
+    overflow: hidden;
+    padding-bottom: 40px;
+}
+#services h2{
+    color: #2a3843;
+    font-weight: bold;
+}
+#services p{
+    color: #798989;
+}
+.mb30{
+    margin-bottom: 50px;
+}
+
+.service{
+    background-color: #FFF;
+    width: 200px;
+    padding: 30px 10px;
+    height: 220px;
+    border: 1px solid #d8d8d0;
+    box-shadow:  0px 3px 3px #d8d8d0;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    float: left;
+}
+.service:nth-of-type(4n){
+    margin-right: 0px;
+}
+.service h5{
+    color: #2a3843;
+    font-size: 14px;
+}
+.service p{
+    color: #2a3843;
+    font-size: 12px;
+}
+.service img{
+    width: 80px;
+    margin-bottom: 15px;
+}
+#contact{
+    background-color: #32a773;
+    padding: 50px 0;
+}
+.mb50{
+    margin-bottom:50px;
+}
+#callus{
+    width:240px;
+    padding: 40px;
+    margin-left: 40px;
+    float: left;
+}
+#callus h5{
+    display: inline-block;
+    margin: 0px 5px ;
+    color: #f7e97c;
+    font-size: 24px;
+}
+#callus p:first-of-type{
+    padding-top: 20px;
+}
+.lightblack{
+    color:#313e34;
+}
+#emailus{
+    width:500px;
+    margin-left: 10px;
+    padding: 40px 40px 10px 40px;
+    float: left;
+}
+#emailus h5{
+    display: inline-block;
+    margin: 0px 5px ;
+    margin-bottom: 15px;
+    color: #f7e97c;
+    font-size: 24px;
+}
+#emailus input[type=text]{
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #FFF;
+    padding: 10px;
+    display: block;
+    margin:10px 0;
+    color: #FFF;
+    margin-bottom: 25px;
+}
+#emailus input[type=text]::placeholder{
+    color: #FFF;
+}
+#inputmessage{
+    width: 400px;
+}
+.input{
+    width: 250px;
+}
+#aboutus{
+    background:url(../assets/about-us-background.jpg) left center /cover ;
+    padding: 40px 0;
+}
+#aboutuspic{
+    padding: 20px 0;
+}
+#bigP{
+    width: 300px;
+    float: left;
+    text-transform: uppercase;
+    font-size: 36px;
+    margin: 0px;
+    padding: 0px;
+}
+#aboutusParagraf{
+    width:658px;
+    float:right;
+    font-size: 13px;
+    padding-bottom: 40px;
+}
+#aboutusParagraf p:first-of-type{
+    padding-bottom: 40px;
+}
+#aboutusButton{
+    width: 185px;
+    float: right;
+    margin:0px;
+}
+#aboutusButton a{
+    margin: 0;
+}
+#aboutusParagraf img{
+    float: left;
+    margin-top: 10px;
+}
+footer{
+    color: #000;
+    padding: 40px 0;
+}
+#copyright{
+    color: #000;
+    width: 700px;
+    float: left;
+    padding: 5px 0;
+}
+#copyright a{
+    padding: 0 10px;
+}
+#follow{
+    float:right;
+}
+#follow p{
+    color: #000;
+}
+#follow p img{
+     height: 25px;
+     vertical-align: sub;
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+    .wrapper {
+		width:700px;
+	}
+    #imglogo{
+        float:left;
+        width: 120px;
+    }
+    #denhag{
+        margin-left: 5px;
+    }
+    .mt110{
+        margin-top: 150px;
+    }
+    .ad{
+        width: 220px;
+        float:left;
+        border-right: 1px solid #FFF;
+        margin: 30px 2px;
+        text-align: center;
+        font-size:10px;
+    }
+    .service{
+        width: 190px;
+        padding: 30px 10px;
+        height: 220px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+    .service:nth-of-type(4n){
+        margin-right: 20px;
+    }
+    .service:nth-of-type(3n){
+        margin-right: 0px;
+    }
+    #contact{
+        padding: 30px 0;
+    }
+    #callus{
+        width:220px;
+        padding: 20px;
+        margin-left: 10px;
+        float: left;
+    }
+    #emailus{
+        width:350px;
+        margin-left: 10px;
+        padding: 20px 20px 10px 20px;
+        float: left;
+    }
+    #inputmessage{
+        width: 350px;
+    }
+    .input{
+        width: 200px;
+    }
+    #aboutusParagraf{
+        width:658px;
+        float:left;
+        font-size: 13px;
+        padding-bottom: 40px;
+    }
+    footer{
+        padding:20px 0;
+    }
+    #copyright{
+        font-size: 12px;
+        width: 550px;
+    }
+    #follow{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .wrapper {
+		width: 95%;
+        margin: 0 auto;
+	}
+    #respmenu {
+		display:block;
+	}
+	#nav {
+		float:none;
+        margin-top: 15px;
+	}
+	#nav ul {
+		display:none;
+	}
+	#nav ul li {
+		float:none;
+		border-bottom:1px solid #f7e97c;
+	}
+    .mt150{
+        margin-top: 30px;
+    }
+    
+    #host{
+        height: 250px;
+        margin-top: 10px;
+    }
+    #james{
+        left:5px;
+        width: 50px;
+    }
+    #mathilda{
+        right: 5px;
+        width: 50px;
+    }
+    #hostp{
+        padding: 5px 45px;
+        top: -20px;
+    }
+    .mt110{
+        margin-top: 150px;
+    }
+    .hide{
+        visibility: hidden;
+        display: none;
+    }
+    .ad{
+        width: 100%;
+        float:none;
+        border-right: none;
+    }
+    .ad img{
+        margin-bottom: 20px;
+    }
+    .ad:nth-of-type(3n){
+        border-right: none;
+    }
+    .service{
+        width: 90%;
+        padding: 20px 10px;
+        height: 220px;
+        border: 1px solid #d8d8d0;
+        box-shadow:  0px 3px 3px #d8d8d0;
+        margin-right: 0px;
+        float: none;
+        margin: 5px auto;
+    }
+    .service:nth-of-type(4n){
+        margin: 5px auto;
+    }
+    
+    #contact{
+        padding: 20px 0;
+    }
+    .mb50{
+        margin-bottom:20px;
+    }
+    #callus{
+        width:90%;
+        padding: 30px;
+        margin-left: 0px;
+        float: none;
+    }
+    #emailus{
+        width: 90%;
+        margin-left: 0px;
+        padding: 20px 20px 10px 20px;
+        float: none;
+    }
+    #inputmessage{
+        width: 90%;
+    }
+    .input{
+        width: 70%;
+    }
+    #aboutus{
+        padding: 20px 0;
+    }
+    #aboutuspic{
+        padding: 20px 0;
+    }
+    #bigP{
+        width: 90%;
+        float: none;
+    }
+    #aboutusParagraf{
+        width:90%;
+        float:none;
+        padding-bottom: 20px;
+    }
+    #aboutusParagraf p:first-of-type{
+        padding-bottom: 20px;
+    }
+    #aboutusButton{
+        width: 185px;
+        float: none;
+        margin: 5px;
+    }
+    #aboutusParagraf img{
+        float: none;
+        margin:10px;
+    }
+    footer{
+        padding: 10px 0;
+    }
+    #copyright{
+        width: 100%;
+        float: none;
+        padding: 5px 0;
+    }
+    #follow{
+        float:none;
+    }
+    #follow p img{
+         height: 35px;
+    }
+}
